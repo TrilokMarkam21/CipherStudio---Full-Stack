@@ -2,7 +2,7 @@
 import axios from 'axios';
 
 const api = axios.create({
-  baseURL: https://cipherstudio-full-stack.onrender.com', // Your backend URL
+  baseURL: 'https://cipherstudio-full-stack.onrender.com', // Your backend URL
 });
 
 // This runs before every request
