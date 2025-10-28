@@ -1,0 +1,17 @@
+This file goes in your /backend folder
+
+Node.js dependencies
+
+node_modules/
+
+Environment file - VERY IMPORTANT
+
+Contains secret keys for MongoDB and JWT
+
+.env
+
+Log files
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*

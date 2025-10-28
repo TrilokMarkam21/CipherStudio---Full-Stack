@@ -1,0 +1,141 @@
+/* src/App.css */
+
+/* Make the root app container fill the screen */
+.app-container {
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+
+/* Make the SandpackProvider's wrapper div the main flex column */
+.sp-provider-wrapper {
+  display: flex !important;
+  flex-direction: column !important;
+  height: 100% !important;
+  width: 100% !important;
+}
+
+/* Header styles */
+.header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 10px 20px;
+  background: #ffffff;
+  border-bottom: 1px solid #ddd;
+  flex-shrink: 0; 
+}
+
+.header h1 {
+  font-size: 1.25rem;
+  margin: 0;
+  margin-right: auto;
+  color: #333;
+}
+
+/* IDE Layout styles */
+.ide-layout {
+  display: flex !important;
+  flex-grow: 1 !important; 
+  border-top: 1px solid #ddd;
+  overflow: hidden !important;
+}
+
+/* Force Sandpack components to fill their flex containers */
+.ide-layout > div,
+.ide-layout .sp-layout,
+.ide-layout .sp-editor,
+.ide-layout .sp-preview,
+.ide-layout .sp-file-explorer {
+  height: 100% !important;
+}
+
+/* Add a border between editor and preview */
+.ide-layout > div:nth-child(2) {
+  border-right: 1px solid #eee;
+}
+
+/* --- Button Styles --- */
+
+.dashboard-link {
+  padding: 8px 14px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+  border-radius: 6px;
+  text-decoration: none;
+  background-color: #f0f0f0;
+  color: #333;
+  border: 1px solid #ccc;
+  transition: background-color 0.2s;
+}
+.dashboard-link:hover {
+  background-color: #e6e6e6;
+}
+
+.ide-button {
+  padding: 8px 14px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+  border: none;
+  border-radius: 6px;
+  text-decoration: none;
+  margin-left: 10px;
+  transition: background-color 0.2s;
+}
+
+.ide-button.save {
+  background: #007bff;
+  color: white;
+}
+.ide-button.save:disabled {
+  background: #aaa;
+}
+.ide-button.save:hover:not(:disabled) {
+  background: #0056b3;
+}
+
+.ide-button.create {
+  background: #28a745;
+  color: white;
+}
+.ide-button.create:hover {
+  background: #218838;
+}
+
+.ide-button.delete {
+  background: #dc3545;
+  color: white;
+}
+.ide-button.delete:hover {
+  background: #c82333;
+}
+
+/* --- NEW STYLES --- */
+.ide-button.create-folder {
+  background: #17a2b8;
+  color: white;
+}
+.ide-button.create-folder:hover {
+  background: #138496;
+}
+
+.ide-button.rename {
+  background: #ffc107;
+  color: #212529;
+}
+.ide-button.rename:hover {
+  background: #e0a800;
+}
+
+/* --- Loading Screen --- */
+.loading-screen {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  font-size: 1.5rem;
+  font-weight: 500;
+  gap: 20px;
+}

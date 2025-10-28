@@ -1,0 +1,111 @@
+/* src/pages/DashboardPage.css */
+.dashboard-container {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #f9f9f9;
+}
+
+.dashboard-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.dashboard-nav h2 {
+  margin: 0;
+  color: #333;
+}
+
+.logout-button {
+  padding: 8px 14px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #fff;
+  background-color: #d93025;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.logout-button:hover {
+  background-color: #b02318;
+}
+
+.dashboard-content {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.dashboard-content h3 {
+  font-size: 1.5rem;
+  color: #444;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.new-project-form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 2.5rem;
+}
+
+.new-project-form input {
+  flex-grow: 1;
+  padding: 0.75rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.new-project-form button {
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.new-project-form button:hover {
+  background-color: #0056b3;
+}
+
+.project-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.project-card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 1.5rem;
+  text-decoration: none;
+  color: #333;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  transition: box-shadow 0.2s, transform 0.2s;
+}
+
+.project-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.project-card h4 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  color: #007bff;
+}
+
+.project-card p {
+  font-size: 0.9rem;
+  color: #666;
+  margin: 0;
+}
